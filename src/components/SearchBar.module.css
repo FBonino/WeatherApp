@@ -1,0 +1,30 @@
+.search {
+	background-color: #f3f4ed;
+	padding: 0.4rem;
+	display: flex;
+	align-items: center;
+}
+
+.input {
+	border: none;
+	background-color: #f3f4ed;
+	padding: 0rem 0.5rem;
+	width: 15vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.input:focus {
+	outline: none;
+}
+
+.button {
+	background-color: #f3f4ed;
+	font-size: larger;
+	border: none;
+	transition: transform 250ms;
+	margin-right: 0.5rem;
+}
+
+.button:hover {
+	transform: scale(1.1);
+}

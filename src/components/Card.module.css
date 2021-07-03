@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.card {
+  background-color: transparent;
+  background-image: url(../img/page.png);
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position-x: center;
+  background-position-y: -7.5vh;
+  box-shadow: 0.5rem 0.5rem 0.5rem #000000c5;
+  min-width: 19vw;
+  min-height: 20vh;
+  margin: 2.2rem 1.5rem;
+  transition: transform 300ms, box-shadow 300ms;
+}
+
+.card:hover {
+  box-shadow: 0.75rem 0.75rem 1rem #000000c5;
+}
+
+.button {
+  padding: 0px;
+  margin: 1rem;
+  background-color: rgb(139, 0, 0);
+  border-radius: 9999px;
+  border: 2px solid rgb(54, 0, 0);
+  transition: transform 400ms, box-shadow 400ms;
+}
+
+.button:focus {
+  outline: none;
+  transform: scale(1.2) perspective(1000px) rotateX(-15deg);
+  box-shadow: 0rem 0.25rem 0.5rem black;
+}
+
+.props {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;  
+  font-family: 'Lobster';
+}
+
+.flag {
+  transform: scale(2.5);
+  margin: 0.75rem;
+  padding-bottom: 0.25rem;
+  margin-left: 2rem;
+}
+
+.city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 0 2.5vw;
+}
+
+.link {
+  color: black;
+}
+
+.link:hover {  
+  text-decoration: none;
+  color: black;
+}

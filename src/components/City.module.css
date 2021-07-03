@@ -1,0 +1,54 @@
+.container {
+	background-color: transparent;
+	background-image: url('../img/page.png');
+	background-repeat: no-repeat;
+	background-size: 175%;
+	background-position-x: center;
+	background-position-y: -5rem;
+	padding: 2rem 1.5rem;
+	width: fit-content;
+	min-width: 25vw;
+	min-height: 56vh;
+	display: flex;
+	flex-direction: column;
+	margin: 10em auto;
+	border-radius: 0 2rem 0 0;
+}
+
+.container > h2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0.5em;
+	margin-top: 5.7vh;
+}
+
+.flag {
+  transform: scale(2.5);
+	margin: 1rem 2rem;
+}
+
+.info {
+	margin-top: 1.9rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.props {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.props > div {
+	margin-bottom: 1.85vh;
+	font-family: cursive;
+}
+
+.image {
+	width: fit-content;
+	height: fit-content;
+	margin: auto;
+	transform: scale(1.5);
+}

@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-image: url(https://i.imgur.com/lHjMVWt.png);
+}

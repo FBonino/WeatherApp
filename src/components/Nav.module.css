@@ -1,0 +1,49 @@
+.container {
+  background-color: #6565667e;
+  padding: 0.75rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0%;
+  transition: opacity 150ms;
+  align-items: center;
+}
+
+.container:hover {
+  opacity: 100%;
+}
+
+.title {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  color: white;
+}
+
+.header:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.header > h5 {
+  margin: auto 0rem;
+  margin-left: 2rem;
+}
+
+.about {
+  color: white;
+  margin: auto 5rem;
+}
+
+.about:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  transform: scaleX(1.25);
+}

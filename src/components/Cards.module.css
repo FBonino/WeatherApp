@@ -1,0 +1,13 @@
+.container {
+  padding: 3vh 2.85vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-image: url("https://i.imgur.com/moIfnXj.jpg");
+  margin: 2vh auto;
+  max-width: 96vw;
+  min-height: 96vh;
+  font-family: cursive;
+  border: 2vw solid black;
+  border-image: url(https://lh4.googleusercontent.com/proxy/A3hUJvvhnWumcuAkFQUIB0digklGLhPK2Dtk__U8y-BmqA33XvxjnDpsa7agA5JZcxI7lUaPiPNqArkhPDJTemDwLUF-ItvW5Jk=s0-d) 70 50 repeat;
+}
