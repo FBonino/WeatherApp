@@ -61,7 +61,7 @@ function App() {
       <Route exact path='/'>
         <Cards cities = {cities} onClose = {onClose} />
       </Route>
-      <Route path = '/ciudad/:id' render = {({match}) => <City city = {onFilter(match.params.id)}/> }/>
+      <Route path = '/city/:id' render = {({match}) => <City city = {onFilter(match.params.id)}/> }/>
     </div>
   );
 }

@@ -4,8 +4,10 @@ import App from './containers/App';
 import {BrowserRouter} from 'react-router-dom';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <React.Fragment>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.Fragment>,
   document.getElementById('root')
 );

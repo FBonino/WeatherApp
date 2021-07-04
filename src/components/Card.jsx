@@ -6,7 +6,7 @@ export default function Card ({name, img, onClose, id, country, temp}) {
   return (
     <div className={styles.card}>
       <button className={styles.button} onClick={onClose}> 🔴 </button>
-      <Link to = {`/ciudad/${id}`} className={styles.link}>
+      <Link to = {`/city/${id}`} className={styles.link}>
         <div>        
           <div className={styles.city}>
             <h3> {name}, {country}</h3>
