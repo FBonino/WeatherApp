@@ -50,9 +50,7 @@ function App() {
 
   return (
     <div className="App">
-      <Route path = '/'>
-        <Nav onSearch = {onSearch}/>
-      </Route>
+      <Nav onSearch = {onSearch}/>
       <Route path='/about' component={About}/>
       <Route exact path='/'>
         <Cards cities = {cities} onClose = {onClose} />
