@@ -1,8 +1,8 @@
 .container {
   background-color: #6565667e;
   padding: 0.75rem 2rem;
-  /* position: fixed;
-  top: 0; */
+  position: fixed;
+  top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;

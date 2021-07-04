@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import './App.css';
 import Nav from '../components/Nav.jsx';
-// import Cards from '../components/Cards.jsx';
+import Cards from '../components/Cards.jsx';
 import {Route} from 'react-router-dom';
-// import About from '../components/About';
-// import City from '../components/City';
+import About from '../components/About';
+import City from '../components/City';
 
 const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
 
 function App() {
   const [cities, setCities] = useState([]);
 
-  // function onClose(id) {
-  //   setTimeout(() => setCities(oldCities => oldCities.filter(c => c.id !== id)), 500);  
-  // }
+  function onClose(id) {
+    setTimeout(() => setCities(oldCities => oldCities.filter(c => c.id !== id)), 500);  
+  }
 
   function onSearch(ciudad) {
     fetch(`https://api.openweathermap.org/data/2.5/find?q=${ciudad}&appid=${apiKey}&units=metric`)
@@ -43,25 +43,25 @@ function App() {
       });
   }
 
-  // function onFilter(ciudadId) {
-  //   let ciudad = cities.filter(c => c.id === parseInt(ciudadId));
-  //   if(ciudad.length > 0) {
-  //       return ciudad[0];
-  //   } else {
-  //       return null;
-  //   }
-  // }
+  function onFilter(ciudadId) {
+    let ciudad = cities.filter(c => c.id === parseInt(ciudadId));
+    if(ciudad.length > 0) {
+        return ciudad[0];
+    } else {
+        return null;
+    }
+  }
 
   return (
     <div className="App">
-      <Route path = '/'>
+      <Route exact path = '/'>
         <Nav onSearch = {onSearch}/>
       </Route>
-      {/* <Route path='/about' component={About}/>
+      <Route path='/about' component={About}/>
       <Route exact path='/'>
         <Cards cities = {cities} onClose = {onClose} />
       </Route>
-      <Route path = '/city/:id' render = {({match}) => <City city = {onFilter(match.params.id)}/> }/> */}
+      <Route path = '/city/:id' render = {({match}) => <City city = {onFilter(match.params.id)}/> }/>
     </div>
   );
 }
