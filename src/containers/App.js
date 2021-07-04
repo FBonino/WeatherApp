@@ -57,11 +57,11 @@ function App() {
       <Route path = '/'>
         <Nav onSearch = {onSearch}/>
       </Route>
-      <Route path='/about' component={About}/>
+      {/* <Route path='/about' component={About}/>
       <Route exact path='/'>
         <Cards cities = {cities} onClose = {onClose} />
       </Route>
-      <Route path = '/city/:id' render = {({match}) => <City city = {onFilter(match.params.id)}/> }/>
+      <Route path = '/city/:id' render = {({match}) => <City city = {onFilter(match.params.id)}/> }/> */}
     </div>
   );
 }
