@@ -10,7 +10,7 @@ export default function Card ({name, img, onClose, id, country, temp}) {
         <div>        
           <div className={styles.city}>
             <h3> {name}, {country}</h3>
-            <img className={styles.flag} src={`http://openweathermap.org/images/flags/${country.toLowerCase()}.png`} alt=""/>
+            <img className={styles.flag} src={`https://openweathermap.org/images/flags/${country.toLowerCase()}.png`} alt=""/>
           </div>
         </div>
         <div className={styles.props}>
@@ -18,7 +18,7 @@ export default function Card ({name, img, onClose, id, country, temp}) {
             <h2> {temp} ºC</h2>
           </div>
           <div>
-            <img className={styles.image} src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt=""/>
+            <img className={styles.image} src={`https://openweathermap.org/img/wn/${img}@2x.png`} alt=""/>
           </div>              
         </div>
       </Link>

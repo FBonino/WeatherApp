@@ -16,7 +16,7 @@ function App() {
   }
 
   function onSearch(ciudad) {
-    fetch(`http://api.openweathermap.org/data/2.5/find?q=${ciudad}&appid=${apiKey}&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/find?q=${ciudad}&appid=${apiKey}&units=metric`)
       .then(r => r.json())
       .then((recurso) => {
         if(recurso.count){

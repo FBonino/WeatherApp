@@ -5,7 +5,7 @@ export default function City({city}) {
   return (
 		<div className={styles.background}>
 			<div className={styles.container}>
-				<h2>{city.name}, {city.country} <img className={styles.flag} src={`http://openweathermap.org/images/flags/${city.country.toLowerCase()}.png`} alt=""/></h2>                    
+				<h2>{city.name}, {city.country} <img className={styles.flag} src={`https://openweathermap.org/images/flags/${city.country.toLowerCase()}.png`} alt=""/></h2>                    
 				<div className={styles.info}>
 					<div className={styles.props}>
 						<div>Temperature: {city.temp} ºC</div>
@@ -17,7 +17,7 @@ export default function City({city}) {
 						<div>Latitude: {city.latitud}º</div>
 						<div>Longitude: {city.longitud}º</div>
 					</div>
-					<img className={styles.image} src={`http://openweathermap.org/img/wn/${city.img}@2x.png`} alt=""/>
+					<img className={styles.image} src={`https://openweathermap.org/img/wn/${city.img}@2x.png`} alt=""/>
 				</div>
 			</div>
 		</div>
